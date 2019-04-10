@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 3</title>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname"/>
+  </form>
+  <script type="text/javascript">
+    var touche = document.getElementById('lastname');
+
+    touche.addEventListener('input', function(){
+      alert(document.getElementById('lastname').value);
+    });
+  </script>
+</body>
+</html>
